@@ -4,6 +4,7 @@ class Person
 :wrist_size, :glove_size, :pant_length, :pant_width
   
   def initialize(properties)
+    #takes in the properties hash and send the key value pairs in a mass assignment method
   properties.each {|key, value| self.send(("#{key}="), value)}
   end
 end
